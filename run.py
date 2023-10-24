@@ -30,9 +30,20 @@ print(
             )
 
 #Creating a list of words from which the player will receive a random choice.
-words = ['mouse', 'cat', 'fish', 'robot', 'computer']
+words = ['mouse', 'computer']
 
 picked = random.choice(words)
-print(picked)
+
+right = []
+wrong = []
+
+#Creating a loop for player to choose new letters
+while True:
+    guess = input("Guess a letter")
+
+    if guess in picked:
+        print('Yes')
+    else:
+        print('No')
 
 
