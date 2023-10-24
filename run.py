@@ -34,13 +34,22 @@ words = ['mouse',]
 
 picked = random.choice(words)
 
-right = []
+print('The word has', len(picked), 'letters')
+
+right = ['_'] * len(picked)
 wrong = []
+
+def update():
+    for i in right:
+        print(i, end = ' ')
+    print()
+
+update()
 
 #Creating a loop for player to choose new letters
 while True:
     
-    print('================')
+    print('=====================')
     
     guess = input("Guess a letter..")
 
