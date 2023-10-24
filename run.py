@@ -29,4 +29,10 @@ print(
             """
             )
 
+#Creating a list of words from which the player will receive a random choice.
+words = ['mouse', 'cat', 'fish', 'robot', 'computer']
+
+picked = random.choice(words)
+print(picked)
+
 
