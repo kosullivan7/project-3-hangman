@@ -69,6 +69,11 @@ while True:
         else:
             print('You already guessed that letter')
             print(wrong)
+    if len(wrong)> 4:
+        print('You lose...')
+        print('The correct word is ', picked)
+        break
+
     if '_' not in right:
         print('Well done! You win!')
         break
