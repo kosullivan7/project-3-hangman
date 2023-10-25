@@ -43,6 +43,17 @@ def update():
     for i in right:
         print(i, end = ' ')
     print()
+print('choosing a word')
+
+#creating a time function when generating a word
+def wait():
+    for i in range(5):
+        print('.', end = '')
+        sleep(.5)
+    print()
+print('choosing a word')
+
+wait()
 
 update()
 parts(len(wrong))
@@ -55,6 +66,8 @@ while True:
 #This will make any correct letter picked go into the correct underscore
     
     guess = input("Guess a letter..")
+    print('let me check...')
+    wait()
 
     if guess in picked:
         index = 0
