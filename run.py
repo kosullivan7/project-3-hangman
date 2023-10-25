@@ -30,7 +30,9 @@ print(
             )
 
 #Creating a list of words from which the player will receive a random choice.
-words = ['mouse',]
+words = ['mouse', 'budget', 'corner', 'detail', 'appeal', 'diamond', 
+         'comfort', 'combine', 'college', 'auction', 'account', 'academy',
+         'achieve', 'beyond', 'digital' ]
 
 picked = random.choice(words)
 
@@ -66,7 +68,9 @@ while True:
 #This will make any correct letter picked go into the correct underscore
     
     guess = input("Guess a letter..")
+    
     print('let me check...')
+    
     wait()
 
     if guess in picked:
