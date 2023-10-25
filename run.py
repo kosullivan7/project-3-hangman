@@ -50,12 +50,19 @@ update()
 while True:
     
     print('=====================')
+
+#This will make any correct letter picked go into the correct underscore
     
     guess = input("Guess a letter..")
 
     if guess in picked:
-        right.append(guess)
-        print('Right:' ,right)
+        index = 0
+        for i in picked:
+            if i == guess:
+                right[index] = guess
+            index += 1
+        update()
+    
     else:
         wrong.append(guess)
         print('Wrong:' ,wrong)
