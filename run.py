@@ -64,7 +64,13 @@ while True:
         update()
     
     else:
-        wrong.append(guess)
-        print('Wrong:' ,wrong)
+        if guess not in wrong:
+            wrong.append(guess)
+        else:
+            print('You already guessed that letter')
+            print(wrong)
+    if '_' not in right:
+        print('Well done! You win!')
+        break
 
 
