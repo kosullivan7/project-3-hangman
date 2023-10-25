@@ -45,6 +45,7 @@ def update():
     print()
 
 update()
+parts(len(wrong))
 
 #Creating a loop for player to choose new letters
 while True:
@@ -66,9 +67,11 @@ while True:
     else:
         if guess not in wrong:
             wrong.append(guess)
+            parts(len (wrong) )
         else:
             print('You already guessed that letter')
             print(wrong)
+# code to maximise amount of lives or guesses of user
     if len(wrong)> 4:
         print('You lose...')
         print('The correct word is ', picked)
