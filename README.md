@@ -1,32 +1,25 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hangman
 
-Welcome,
+Hangman is a Python terminal game, which runs in the Code Institute mock terminal Heroku. 
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+Users can try to beat the computer by guessing the letters of the missing word. Every wrong guess takes one life. The game is over if the user guesses all the missing letters of the hidden word or if he loses all his lives.
 
-## Reminders
+You can view the live site [here](https://hangman-fun-game.herokuapp.com/)
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+# How to play
 
-## Creating the Heroku app
+It's a popular word guessing game where the player attempts to build a missing word by guessing one letter at a time. 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+The player must guess the letters of the hidden word, if the guess is correct, the letter missing in the word is replaced by the correct letter.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+If the player puts an incorrect letter, the error message is displayed and the player is asked to resubmit their choice. Each wrong guess takes 1 life. 
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+Game ends if the player correctly guesses all the letters of the missing word or if the player loses all his lives.
 
-Connect your GitHub repository and deploy as normal.
+# User Stories 
 
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+- As a user I want to easily understand the purpose of the game
+- As a user I want to have fun
+- As a user I want to see my remaining lives
+- As a user I want the game to be challenging 
