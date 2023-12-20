@@ -29,7 +29,7 @@ Game ends if the player correctly guesses all the letters of the missing word or
 - Welcome Screen - User can start a game and see the rules
 
 <p align="center">
-<img src="readme-assets/images/screenshot1.png" width="600px" height="400">
+<img src="readme-assets/screenshot1.png" width="600px" height="400">
 </p>
 
 - Game - the game will start by selecting a random word from a list of selected words
@@ -37,18 +37,19 @@ Game ends if the player correctly guesses all the letters of the missing word or
 - User Input - the player is asked to guess a letter. If the entry is correct, the letter will appear in the word, if the entry is incorrect, the user will lose one life and the hangman will start drawing.
 
 <p align="center">
-<img src="readme-assets/images/screenshot2.png" width="600px" height="400">
+<img src="readme-assets/screenshot2.png" width="600px" height="400">
 </p>
 
 - Invalid inputs - to be sure that the user provided  the correct input. For any invalid input, the error message  will appear.
 
 <p align="center">
-<img src="readme-assets/images/screenshot3.png" width="600px" height="400">
+<img src="readme-assets/screenshot3.png" width="600px" height="400">
 </p>
 
 # Issues and Bugs
  - Error message line too long
     - I fixed the error by splitting the string into two lines
+    - A number of lines were missing spaces between code
 
 # Technologies Used
 - Languages 
@@ -57,6 +58,10 @@ Game ends if the player correctly guesses all the letters of the missing word or
 # Testing
 ## Validators
 The [Python Code Checker](https://extendsclass.com/python-tester.html) was used to check my code for syntax errors in this project.
+
+<p align="center">
+<img src="readme-assets/screenshot4.png" width="500px" height="100">
+</p>
 
 - Manually tested user inputs by purposefully inputing incorrect data to confirm error messages where capturing wrong inputs
 
